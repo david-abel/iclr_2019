@@ -673,7 +673,7 @@ Q(s, o) = c(s,o) + \sum_{s'} P(s' \mid s,o) \sum_{o'} \mu(o' \mid s') Q(s',o'),
 with $c(s,o)$ some cost of deliberation. \\
 
 
-Experiemnts: on Atari, with and without deliberation cost (as a regularizer). Indeed find that options take longer before terminating (which was the intended goal). \\
+Experiments: on Atari, with and without deliberation cost (as a regularizer). Indeed find that options take longer before terminating (which was the intended goal). \\
 
  Q: Should all option components optimize the same thing? (Should $\mc{I}, \beta, \pi$ all be geared toward maximizing rewards?) \\
  
@@ -824,5 +824,36 @@ Karthik: Learning a model of the world can give you far more flexibility about w
 
 Doina: Not so sure the distinction is salient. Models can be thought of as generalized value functions, where things become much more blurry. Might end up with model-based RL that is much less efficient because learning the mapping from obserbation to observation is very hard. To do this, need to understand the effects of your actions vs. understand what other variables are important for policy/value function. This latter component might be much simpler than the former. Might need to rethink the nature of our models. We should build models that are small bricks. \\
 
-Matt: That resonates! Fascinated by grey the distinction is between model-free and model-based. For a number of years in neuroscience this distinction was treated as very categorical. But, we've realized it's much messier. 
+Matt: That resonates! Fascinated by grey the distinction is between model-free and model-based. For a number of years in neuroscience this distinction was treated as very categorical. But, we've realized it's much messier. We're focused on models that can maximize value, but the situation changes when we instead focus on agents that can transmit knowledge to other agents via teaching or communication. We likely need very different models for these kinds of tasks. \\
 
+Sergey: I think the two approaches are the same. They're similar, at least. RL is about making predictions (usually), but it's important to realize there's a lot of knowledge contained in some of the things agents predict like the value function (\dnote{very clever dollar bill example Sergey used: imagine you wanted to predict the number of dollar bills in front of you, and maximize this value. To do this you basically need to model everything in the world.})
+
+Tejas: Lots of domains that have nothing to do with rewards or reward maximization, like coming up with number theory or computability. \\
+
+Sergey: It's not the only way to develop knowledge about the world. But if there's something that has a meaningful effect on your environment, then you'll need to predict them in order to estimate/maximize your value function. \\
+
+Jane: One thing about learning these models just from interaction -- in the real world, things are not necessarily disentangled in the way you might like. \dnote{I missed the rest :(} \\
+
+\spacerule
+
+Q: Is there a general recipe for extracting understanding from human intelligence for RL? \\
+
+Matt: Meta learning (mic drop). Look at the history of AI: AI winter was partially caused by the failure of trying to encode all knowledge into our agents. We definitely want to avoid that with inserting the right structures.\\
+
+Tejas: Good inductive biases are ones that will never go away. Desiderata for those are that they are truths. How do we find truths? A few scientific ways to do that: notions of agency are true, objects are true. Put these kinds of truths into the agents' head, I think we'll have agents that do the right thing. \\
+
+Q: Is anything really ``True"? \\
+
+Tejas: Yes, otherwise it's just soup. There's no existence without it. An agent is an object with goals, and objects are true. We can try to learn these invariant truths. \\
+
+Doina: With the risk of circling back: one of the lessons that we have been learning over and over again is that putting too much stuff into the agent's head can be detrimental. See: AlphaGo. Put in a bit of knowledge, let it find its own knowledge from its own data. Lots of the structure we have in deep RL are useful, but some are probably not useful. \\
+
+Tejas: if you don't assume anything then what? Can we assume a model of an agent? \\
+
+Sergey: Lots of things that are true and obvious. It's okay to learn that from data. Naybe it's better, because then it knows how to learn those true things to other ones. Better for my students to figure some things on their own, for instance. \\
+
+Tim: Tend on the side of fewer inductive biases, and we'll tend to keep coming back to that. As we get more data, it might be easy to discovery the essential inductive biases from the data we have around. Humans/animals genetic code don't contain that many bits that are sitting in our DNA that produces our brains/bodies. Rediscovering those inductive biases might not be that hard, so we should tend to only lightly add inductive biases. \\
+
+\spacerule
+
+\dnote{Running out of battery: missed the last question!}
