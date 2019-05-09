@@ -319,3 +319,125 @@ $\ra$ We need a real alternative. We need the conveniences and empowerment, we n
     \item So: stock options are cool, but we should be thinking about developing tools like this for the next generation of technology.
 \end{itemize}
 
+
+\subsubsection{Q \& A}
+%({\it Questions}) \\
+
+Q: Could you comment on AI in the military? \\
+
+A: War in 2019: any form of it is going to be terrible. Anything that makes it more convenient will make it even worse. Governments should be accountable to us. \\
+
+Q: Feels a bit US centric -- any thoughts on the broader international perspective? \\
+
+A: Remember the paper that can detect (claims to) detect secual orientation. Ugandan government has outlawed homosexuality, so we need to keep these things in mind. If we have better healthcare some of these issues will be less damaging. Fixing the politics makes some of these dangers less potent. Important for silicon valley not to be in this bubble. Everytime I go to SanFran now, every other table around me is talking about when stock options vest. Even if you're making great money but healthcare isn't there and your technology is used to keep people from getting hired, it's problematic. \\
+
+Q: Question about the ``solutions" part, and refusing to build unethical software. Often we build small parts of a big thing, how do you predict what's going to be harmful? \\
+
+A: First, that's why we should organize and unionize. Second, refusal is powerful but will only last so long. Real path forward is the alternative path: can't get out of oil without solar/wind energy. Surveillance and data economy is our oil economy, and it's cheap. But we can develop the solar equivalent here, and insist on these alternatives that we can embrace. Third, you all might be on the product side: I encourage you to find people on your security team and talk to them. They see the worst.  They can warn you how these things might be used in the worst possible way. \\
+
+\dnote{They did the last three questions together}
+
+Q: Lots of surveillance in the US, and strong culture against whistleblowers, too. Should people at ICLR take a bigger stand? \\
+
+A: Yes absolutely speak out against that. Encourage and support whistleblowers in your own company. \\
+
+
+Q: What are the real problems, and what specific things should we be avoiding? We've seen engineers stand up to people working on the army. We've talked about companies that sell ads at any cost. \\
+
+A: If the data exists, it will be sold and used. Great challenge: we need to figure out how to do some of this without surveilance. That includes, expiration dates on data, operating on encrypted data (insights on aggregate, not individualized). Key thing is to kill the surveilance economy. We can't kill phones, since those empower us, but we need an alternative. 
+
+Q: Any comments on healthcare solutions?  \\
+
+A: Lots of things! Skin care diagnosis and other tools that are empowring. Need to figure out a new full stack trusted method that doesn't feed into the surveilance economy. No way we can collect all this data and work on this data and not have the powerful corporations and governments come for it. We need to stop the sureilance economy. 
+
+
+\subsection{Debate led by Leslie Kaelbling}
+
+The debaters are: Josh Tenenbaum (JT), Doina Precup (DP), Suchi Sara (SS), Jeff Clun (JC), with Leslie's comments as LPK. \\
+
+
+LPK: We are interested in questions from the audience! The topic is on structure in learning. Each panelist will do some intros: \\
+
+DP: I drew the short straw. I'm going to argue that a lot of what we need can and should be learned from data rather than come from priors. Especially in the context of generally purpose AI, rather than special purpose applications. In a special purpose application we should definitely use structure/priors, but in making general AI, we want our systems to learn from data. See: AlphaGo. First we used the specialized human version with some expert knowledge, but then the approach that ended up dominating was the one that used entirely data. \\
+
+JT: Other extreme! I want to emphasize what you can build in. I, like Doina, am interested in general AI. I'm not against learning, but I'm really struck by how much systems like AlphaGo {\it don't} do. We have a general toolkit for building a specific kind of intelligence, but not general intelligence. Transferring to a different board size, for instance, would require retraining from nearly scratch. I'm interested in taking inspiration from the ways humans come into knowledge, like learning from the stage of a baby. In the universe the only case we have of learning from an early/scratch stage are human infants. We've learned so much, a bit contrary to some of the (bitter) lessons that some people have been drawing. The findings in cognitive science we find tell a different story: lots of inductive biases in human children. Also: the gazelle, learns to walk in the savannah very quickly or it will be eaten. Or think about a bird: the first time it falls out of a nest it has to fly. Human babies don't start off being able to walk, but before they can do those things, they develop objects, intuitive physics, schemes for defining goals, some notion of space, and so on. Exciting opportunity to take those kinds of core systems and learn how to devise and go beyond them. I would like to think about how we can take the right kind of machinery that include what we know how to do in RL and deep learning, but also what we know about symobolic reasoning and classical methods, so they know how to live in a world. \\
+
+JC: This debate is usully framed as two extremes: 1) build in the right stuff, and 2) learn everything from scratch. I think there's a third alternative here, which is what I call AI generating algorithms: algorithms that can search for an AI agent that on the inner loop is very sample efficient (which come from the outer loop doing the right thing). It's a nice marriage between the two things. When you have a new problem you don't learn from scratch, you deploy this new agent. We know that can work (existence proof: Earth, this happened!). The algorithm is evolution, the inner loop is the human brain. This research direction isn't to say that the outer loop has to be evolution, could be something else like meta learning. If we want to make progress here: three pillars:
+\begin{enumerate}
+    \item Meta learn the architectures
+    \item Meta learn the learning algortihms
+    \item Automate effective learning environments (scaffolding)
+\end{enumerate}
+Clear trend in ML that we're aware of: hand designed systems that work okay will be surpassed by approaches that are wholly data driven/rely on big compute. If you believe in this trend, you should also believe that it can apply to the discovery of this machinery itself. So: what are the structures that allow for sample efficient general purpose learning? This may be the fastest path for us to pursue these big goals. \\
+
+SS: I'm going to oversimplify a bit. Each of the three other panelists proposed a solution path, so I want to highlight some observations, first:
+
+\begin{enumerate}
+    \item Observation 1: Josh and Jeff suggested that if we want to build human-like intelligence, and we know we can get there during learning. Proof for this is evolution. Evolution is very slow. In the process of getting to us lots of calamities. So, a big issue:  we can't afford to make our civilization to go extinct or to make societal level mistakes. What does it mean for us to come up with the right paradigm since we can't afford to make mistakes?
+    
+    \item Observation 2; What are the levers we have in ML? Algorithms learn by interacting or from past data. So the question is: can we conclude that if we have data and interactions alone, we can learn anything we want? Unclear!
+    
+    \item Observation 3: As a field we focus very hard on incrementing on a solution set. I'm curious if we have answers to these kinds of questions: what can we learn easily, starting from a superintelligent being. Do we have a taxonomy for what's easy to learn what's hard to learn? Can we define where the gaps are? Might be good to define the strategy here!
+\end{enumerate}
+
+So, do we really want to be as slow as evolution or take into account what we know? Definitely the latter \\
+
+\spacerule
+
+LPK: Really important for us to each define our own objectives. We each have different big and small scale objectives. Big scale: understand math of learning, biology of the brain, making things work in 10 years or 100 years. So one reason to make this not a knockdown debate is that probably no answer will be true for every objective. So can you each say something more about your objective? \\
+
+DP: I have multiple objectives. Want to understand how to build general AI agents. Some of the things we do now don't align with that goal: we often train from scratch, but don't necessarily need to do that! We could load a vision system in and learn downstream aspects. Would be great to emphasize this kind of continueal learning a bit more. Other chunk of my time I think about medical applications: it's a space where we don't have a lot of data and we can't always intervene because of ethical considerations. Here we often use structure/priors. Conceptual thing: what are the principles of intelligence? Focusing on learning from data can get us to that. People are wonderful but there are other intelligent things in nature too. Working on these algorithmic questions can help us understand much of nature. \\
+
+SS: To me, the biggest challenge is how do we proceed when our objective is broken? (see previous keynote!) Lots of research is asking the right question. Who is going to define the question? How should we think about defining the right objective? \\
+
+DP: That's true! We can have different objectives and that's okay. \\
+
+JT: I'll say quickly: we're all pretty broad minded people but we have our strong deep views about things. I love the evolutionary view. We look at the learning algorithms we've seen, Evolution is the master algorithm (Pedro Domingos). Gazelles/animals are deeply fascinating. Also cultural evolution, especially once you have language, opens up whole new possibilities. The success of AI tools has in large part occurred due in part to the cultural evolution that lets us build collective knowledge and share goals and ideas. \\
+
+JC: I'm interested in how to build intelligence piece-by-piece. But also interested in building a process that can build intelligent systems. Also fascinating to think about the set/space of possible intelligent entities. In part we're motivated by what looks like us, but we might miss out on huge regions of what intelligent/sentient systems look like. Also motivated by applications in healthcare, and beyond. Great opportunity for all of us! \\
+
+LPK: Okay now we'll go to audience questions. This one is anonymous: ``What kind of results would cause you to change your opinion on how much structure vs learning is necessary?" --- How much structure is necessary is the wrong question? You can contextualize this with respect to a particular objective and get a really fascinating question. Hard to prove a negative. We're in the midst of a methodological crisis because we're all putting points in a space. Colleagues? \\
+
+JT: I know one case study I find interesting about intuitive physics: being able to predict/imagine/plan to causally intervene on objects. All about predicting ``what happens if I hit this thing with that thing?". We built a system that didn't do any learning, just did probabilistic inference using a game engine. Other people around the same time tried tackling same problems but in an end-to-end learning method in some impressive ways. Still required huge amount of data and didn't seem to generalize to well. Others have been trying different systems. We've had some workshops on this topic, and reached broader argument: not an argument for necessity, but an empirical result. Building in some models of objects that might interact via contact/having close spatial locality is extremely powerful. We can't prove they're necessary but they're massively effective. Doesn't change any one person's mind but it's a case where we'ved learned some important empirical lessons that turn out to be valid. \\
+
+DP: Can be very valuable to build these things in, but I'm not convinced that we can't just learn these things. The main complaint is usually sample complexity: if we had the right kind of approach for the learning algorithm it could learn these things. Typical example is causality. If we had the right learning algorithm we could learn a causal model not a predictive model. Another short thing about methodology, also very important for us as a field. Difficult to make progress when we care a lot about numbers without also understanding what our systems do. So yes it's great when our algorithms do better, but we need to also understand why. I want to argue that we need to probe our systems not just measure our systems quantiatively/qualitativey, but really probe our systems via hypothesis testing. \\
+
+JC: I agree with Doina! Just wanted to ask Josh: might give us a big lift by building these things in, but perhaps we can learn even better lifts? How do you see things like HoG and SIFT where we eventually learned something better? \\
+
+JT: Yeah, HOG and SIFT is a very instructive example. We see things in intuitive physics with a similar story: right now the best models we have are physics engines (for playing video games, for instance). But we know there's lots of things they don't capture. Recent work starting to learn physics simulators that can improve on these classical notions of physics simulators. We don't know where that story will end. If we look at vision, not just HOG and SIFT, you see the community over a few generations of research, we see the same motifs/ideas repeated (non-linearity, hierarchy, etc). Many versions of the same idea. HOG and SIFT were one idea, AlexNet was another. We'll see similar ideas recurr and build and call back to the same motifs. \\
+
+SS: Josh, question for you: do you think the reason we need more than learning is that you think these systems cant be learned from scratch? Can we learn physics just by learning? \\
+
+JT: That's what happened on Earth via evolution. Compute for simulating evolution is huge and we're just barely start to making progress. So the current route of modern deep RL is not necessarily going to deliver on this promise to learn an entire physical model. Human children are proof that some other route works. \\
+
+JC: I think lots of routes can get to general AI, but it's partially a question of which is the fastest route. It's an open question as to whether the manual path will get there faster than the meta learning or evolutionary approach. \\
+
+SS: Except you missed this along the way: what about everything that happens along the way? \\
+
+JC: Fascinating question! General question of whether we should be building a general AI? Also, what should we be doing along the way to building that? Very real considerations. What's the fastest way to get there: I say the meta-learning approach above. Regarding ethics? Lots of open questions, too. \\
+
+LPJ: One thing Jeff didn't mention was the physical infrastructure required to make this work. Robots need to interact with the world unless we rely on a perfect simulator. I'm not sure we can get that taking off that we might suggest.
+
+\spacerule
+
+LPK: Next question ``Symbol manipulation has no place in deep learning. Change my mind" (Yann LeCun). Symbol means something different to embody; I'd argue that embeddings are roughly symbol manipulations, so maybe you've been doing it and you don't actually know. \\
+
+JT: Certainly not my place to define what deep learning is. One reason it's interesting is that deep learning can mean a lot of things; it could mean and already sort of does mean doing SGD and symbol manipulation. Nice talk tomorrow on this. Whole community trying to explore interesting ways for symbols to live inside of systems that do deep representation learning. Multiple ways to learn a representation, might include symbols or combinations of these. We'll see systems that do things better than without these different techniques. \\
+
+DP: But will we see systems that do this from scratch? \\
+
+JT: Having a basic path for compositionality that gives us meaning/function that wasn't there from the beginning. \\
+
+DP: Meaning as in people assign meaning? Or meaning as in what the machine defines for itself? \\
+
+JT: Whatever you mean! ... If we want to build systems that we trust that we think do have the right kind of meaning, it's one reason to build AI that have these kinds of structure/symbols. \\
+
+\spacerule
+
+LPK: Q from Yoshua Bengio: ``We of course need priors but to obtain the most general AI, we'd like the least amount of priors which buy us the most towards AI-tasks, don't we?" \\
+
+JC: Yes! \\
+
+SS: Also yes, New question for the audience: everything can be learned? (some hands) not everything can be learned (more hands) -- some examples from audience poll of things that can't be learned: causality, halting problem, false things. \\
+
+\dnote{Need to run out for a meeting! Fantastic debate though.}
